@@ -1,0 +1,15 @@
+application:
+  name: fast-reef-cat-registry
+  pods:
+    - name: app
+      image: "# filled by pipeline"
+      path: /
+      servicePorts:
+        - 5000
+      vars:
+        - key: NODE_ENV
+          value: production
+        - key: PORT
+          value: "5000"
+        - key: HOSTNAME
+          value: 0.0.0.0
